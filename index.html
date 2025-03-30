@@ -126,12 +126,24 @@
                 
                 <!-- Github link -->
                 <span class="link-block">
+                  <!-- <a href="https://github.com/hgupt3/gsrl" target="_blank" -->
                   <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (coming soon)</span>
+                  <span>Code [coming soon]</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <!-- <a href="https://huggingface.co/datasets/hgupt3/sitr_dataset" target="_blank" -->
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset + Weights [coming soon]</span>
                   </a>
                 </span>
             </div>
@@ -144,19 +156,20 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/teaser.png" alt="teaser"/>
-     </div>
-      <h2 class="subtitle has-text-centered">
-        Vision-based tactile sensors vary in both optical design and physical properties. Even with the same contact object, a screw, the tactile images produced by each sensor differ significantly. These variations highlight the challenge of transferring models from one sensor to another.  
-      </h2>
+<div class="container is-max-desktop" style="margin-top: -50px;">
+  <div class="hero-body" style="padding-top: 0;">
+    <div class="item">
+      <!-- Your image here -->
+      <video width=100% muted autoplay loop>
+        <source src="static/images/sitr.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
+    <h2 class="subtitle has-text-centered">
+      TL;DR Sensor-Invariant Tactile Representation (SITR)
+    </h2>
   </div>
-</section>
+</div>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -167,7 +180,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            High-resolution tactile sensors have become critical for embodied perception and robotic manipulation. However, a key challenge in the field is the lack of transferability between sensors due to design and manufacturing variations, which result in significant differences in tactile signals. This limitation hinders the ability to transfer models or knowledge learned from one sensor to another. To address this, we introduce a novel method for extracting Sensor-Invariant Tactile Representations (SITR), enabling zero-shot transfer across optical tactile sensors. Our approach utilizes a transformer-based architecture trained on a diverse dataset of simulated sensor designs, allowing it to generalize to new sensors in the real world with minimal calibration. Experimental results demonstrate the method’s effectiveness across various tactile sensing applications, facilitating data and model transferability for future advancements in the field.
+            High-resolution tactile sensors have become critical for embodied perception and robotic manipulation. However, a key challenge in the field is the lack of transferability between sensors due to design and manufacturing variations, which result in significant differences in tactile signals. This limitation hinders the ability to transfer models or knowledge learned from one sensor to another. To address this, we introduce a novel method for extracting Sensor-Invariant Tactile Representations (SITR), enabling zero-shot transfer across optical tactile sensors. Our approach utilizes a transformer-based architecture trained on a diverse dataset of simulated sensor designs, allowing it to generalize to new sensors in the real world with minimal calibration. Experimental results demonstrate the method's effectiveness across various tactile sensing applications, facilitating data and model transferability for future advancements in the field.
           </p>
         </div>
       </div>
